@@ -1,39 +1,40 @@
+<!DOCTYPE html>
 <html>
-<title>
-sunny
-</title>
-<style>
-#sunny{
-color:red;
-text-align:center;
-}
-#card{
-box-shadow: 2px 2px 2px black;
-width:30%;
-margin-top:20%;
-margin-left:30%;
+<body>
 
-}
-#but{
+<h1>Display Radio Buttons</h1>
 
-}
-</style>
-<body >
-<div id="card" onClick="fun()">
-<a href="https://google.com">
-<h1 id="sunny">
-sunny chor 
-</h1>
 
-</a>
-<input placeholder="enter your name">
-</div>
+
+  <p>Please select your gender:</p>
+  <input type="radio" id="ank1" name="gender" value="one">
+  <label for="male">Male</label><br>
+  <input type="radio" id="ank2" name="gender" value="two">
+  <label for="female">Female</label><br>
+  <input type="radio" id="ank3" name="gender" value="three">
+  <label for="other">Other</label>
+ 
+<button onClick="fun()">Submit</button>
+ 
+
+
 </body>
-
 </html>
+
 <script>
+
 function fun(){
+var i,j,k;
+i=document.getElementById("ank1").value;
+j=document.getElementById("ank2").value;
+k=document.getElementById("ank3").value;
+console.log(i)
 
-
+if(i=="one"){
+alert("You are win KBC")
+}
+else if(j=="two"){
+alert("sorry you loose kbc")
+}
 }
 </script>
